@@ -26,4 +26,8 @@ npm run dev
 
 ```sh
 npm run build
+
+
+
 ```
+/node_modules/
