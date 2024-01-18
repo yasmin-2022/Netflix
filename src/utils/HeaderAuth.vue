@@ -8,12 +8,16 @@
       />
       <div class="flex cursor-pointer">
         <p class="mx-3 text-sm text-white">Home</p>
-        <p class="mx-3 text-[0.90rem] text-white">TV Shows</p>
-        <p class="mx-3 text-[0.90rem] text-white">Movies</p>
-        <p class="mx-3 text-[0.90rem] text-white">New & Popular</p>
-        <p class="mx-3 text-[0.90rem] text-white">My List</p>
-        <p class="mx-3 text-[0.90rem] text-white">Browse by Languages</p>
-      </div>
+        <p class="mx-3 text-[0.90rem] text-white">
+          <router-link to="/">  TV Shows</router-link>
+        </p>
+          <p class="mx-3 text-[0.90rem]  text-white">
+            <router-link to="/movie">Movies</router-link></p>
+            <p class="mx-3 text-[0.90rem] text-white ">New & Popular</p>
+            <p class="mx-3 text-[0.90rem] text-white ">My List</p>
+            <p class="mx-3 text-[0.90rem] text-white">Browse by Languages</p>
+            <!-- <router-link to="/movie">Movies</router-link> -->
+          </div>
     </div>
     <div>
       <div class="flex w-[350px] justify-start cursor-pointer">

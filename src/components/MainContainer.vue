@@ -1,9 +1,9 @@
 <template>
-  <div class="title text-white  pt-[16%] px-24">
+  <div class="title text-white  pt-[16%] px-24  ">
     <div class="text-5xl my-4 font-bold">
-      {{ userStore.nowPlaying[13]?.original_title }}
+      {{ userStore.nowPlaying[14]?.original_title }}
     </div>
-    <p class="w-[300px]">{{ userStore. nowPlaying[13]?.overview }}</p>
+    <p class="w-[300px]">{{ userStore. nowPlaying[14]?.overview }}</p>
     <button
       class="text-lg font-normal text-white bg-slate-500  w-[120px] py-2 px-4 rounded-md mt-5 mr-2 hover:bg-white hover:text-black"
     

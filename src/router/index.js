@@ -12,6 +12,11 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      path: "/movie",
+      name: "movie",
+      component:()=>import('../components/movie/Movies.vue'),
+    },
+    {
       path: "/card",
       name: "card",
       component: Card,

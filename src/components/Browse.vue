@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HeaderAuth class="absolute w-full " />
+    <HeaderAuth class="absolute w-full" />
     <MainContainer class="absolute" />
     <VideoTitle />
       <SecondaryContainer />

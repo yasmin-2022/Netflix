@@ -6,7 +6,8 @@ export const useUserStore = defineStore("userStore", {
     nowPlaying: [],
     popularMovies:[],
     topRated: [],
-    upComing:[]
+    upComing: [],
+    movies:[]
   }),
   actions: {
     async nowPlayingMovie () {
@@ -16,7 +17,7 @@ export const useUserStore = defineStore("userStore", {
     },
 
     async popularMovie () {
-    const response = await axios.get("https://api.themoviedb.org/3/movie/popular?api_key=4fee6aae27587c13e678c098a0301a15")
+    const response = await axios.get("https://api.themoviedb.org/3/discover/movie?api_key=4fee6aae27587c13e678c098a0301a15")
     console.log(response?.data?.results)
     this.popularMovies=response?.data?.results
     },
@@ -28,6 +29,11 @@ export const useUserStore = defineStore("userStore", {
     const response = await axios.get("https://api.themoviedb.org/3/movie/upcoming?api_key=4fee6aae27587c13e678c098a0301a15")
     console.log(response?.data?.results)
     this.upComing=response?.data?.results
+    },
+      async Movies () {
+    const response = await axios.get("https://api.themoviedb.org/3/movie/upcoming?api_key=4fee6aae27587c13e678c098a0301a15")
+    console.log(response?.data?.results)
+    this.movies=response?.data?.results
   },
   }
 

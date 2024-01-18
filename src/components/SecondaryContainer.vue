@@ -1,10 +1,10 @@
 <template>
   <div class="bg-black"> 
-    <div class="-mt-80 relative z-20  p-12 ">
+    <div class="-mt-64 relative z-20  p-12 ">
       <MovieList title="Now Playing" :movies="userStore.nowPlaying " />
       <MovieList title="Trending" :movies="userStore.popularMovies"/>
-      <MovieList title="topRated" :movies="userStore.topRated"/>
-      <MovieList title="upComing" :movies="userStore.upComing"/>
+      <MovieList title="TopRated" :movies="userStore.topRated"/>
+      <MovieList title="UpComing" :movies="userStore.upComing"/>
     </div>
   </div>
 </template>
